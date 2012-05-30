@@ -17,5 +17,14 @@ describe "StillPages" do
     end
   end
 
+describe "Home" do
+	it "should have the content Home and Jajaja" do
+		visit '/still/home'
+		page.should have_selector('h1', :text => 'Jajaja')
+		
+	end
+	
+end
+
 end
 
